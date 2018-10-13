@@ -2,9 +2,9 @@
 
 namespace taller_servicio;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model as BaseModel;
 
-class Model extends Model
+class Model extends BaseModel
 {
-    //
+    
 }

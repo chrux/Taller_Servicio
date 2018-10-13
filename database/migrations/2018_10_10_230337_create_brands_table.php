@@ -16,6 +16,7 @@ class CreateBrandsTable extends Migration
         Schema::create('brands', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->unsignedInteger('manufacturer_id');
             $table->foreign('manufacturer_id')->references('id')->on('manufacturers');
             $table->timestamps();
         });
